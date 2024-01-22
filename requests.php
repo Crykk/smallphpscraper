@@ -18,7 +18,7 @@ $productData = [];
 
 $productList->each(function ($productNode) use (&$productData) {
     $productName = $productNode->filter('.product-item-meta__title')->text();
-    $productPrice = $productNode->filter('.price')->text(); // Use the ".price" selector
+    $productPrice = $productNode->filter('.price')->text();
 
 
     $productData[] = [
